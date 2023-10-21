@@ -23,6 +23,7 @@ const ThemNguoiDung = () => {
       })
       .catch((error) => {
         console.log(error);
+        messageApi.error(error.response.data.content);
       });
   }, []);
   const formik = useFormik({
@@ -41,7 +42,7 @@ const ThemNguoiDung = () => {
         .themNguoiDung(values)
         .then((result) => {
           console.log(result);
-          messageApi.success("Thêm người dùng thành công");
+          messageApi.success(result.data.conent);
           dispatch(layDanhSachNguoiDungApi());
           navigate("/admin/quan-ly-nguoi-dung");
           resetForm();

@@ -1,5 +1,5 @@
 import https from "./config";
-const maNhom = "GP01";
+const maNhom = "GP09";
 export const quanLyPhimServ = {
   layDanhSachBanner: async () => {
     return await https.get("/api/QuanLyPhim/LayDanhSachBanner");

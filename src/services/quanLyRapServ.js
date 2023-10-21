@@ -1,5 +1,5 @@
 import https from "./config";
-const maNhom = "GP01";
+const maNhom = "GP09";
 
 export const quanLyRapServ = {
   layThongTinHeThongRap: async () => {
